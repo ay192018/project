@@ -1,8 +1,8 @@
-import request from '../utils/request';
+import axios from "axios"
 
 export const fetchData = () => {
-    return request({
-        url: './table.json',
-        method: 'get'
-    });
-};
+  return axios({
+    url: "../../public/table.json",
+    method: "get",
+  })
+}
