@@ -1,6 +1,6 @@
 import { defineStore } from "pinia"
-
-export const useSidebarStore = defineStore("sidebar", {
+import { Pinia } from "../enum/store"
+export const useSidebarStore = defineStore(Pinia.sidebar, {
   state: () => {
     return {
       collapse: false,

@@ -1,7 +1,7 @@
 import { defineStore } from "pinia"
-
+import { Pinia } from "../enum/store"
 import _$ from "../utils/request"
-export const useUserInfo = defineStore("user", {
+export const useUserInfo = defineStore(Pinia.user, {
   state: () => {
     return {
       token: "",

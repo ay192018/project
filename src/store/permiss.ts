@@ -1,33 +1,16 @@
 import { defineStore } from "pinia"
-
+import { Pinia } from "../enum/store"
 interface ObjectList {
   [key: string]: string[]
 }
 
-export const usePermissStore = defineStore("permiss", {
+export const usePermissStore = defineStore(Pinia.permiss, {
   state: () => {
     return {
       key: <string[]>[],
       defaultList: <ObjectList>{
-        admin: [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7",
-          "8",
-          "9",
-          "10",
-          "11",
-          "12",
-          "13",
-          "14",
-          "15",
-          "16",
-        ],
-        user: ["1", "2", "3", "11", "14", "15"],
+        admin: [],
+        user: [],
       },
     }
   },
